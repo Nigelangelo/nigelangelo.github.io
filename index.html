@@ -1,11 +1,136 @@
 <!DOCTYPE html>
-<head>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+        padding: 10px 0;
+      }
+      nav a {
+        color: white;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      section {
+        padding: 50px;
+        text-align: center;
+      }
+      section:nth-child(even) {
+        background-color: #f4f4f4;
+      }
+      h2 {
+        margin-bottom: 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .card {
+        background: white;
+        border: 1px solid #ddd;
+        margin: 10px;
+        padding: 20px;
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .card h3 {
+        margin-top: 0;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+      }
+    </style>
+  </head>
   <body>
-    <h1>Portfolio</h1>
-    <p>I'm hosted with GitHub Pages.</p>
-    <p>PS WIP käynnissä.</p>
+    <header>
+      <h1>Welcome to My Portfolio</h1>
+    </header>
+    <nav>
+      <a href="#roles">Roles</a>
+      <a href="#learned">Learned</a>
+      <a href="#activity">Activity</a>
+    </nav>
+    <section id="roles">
+      <h2>Roles</h2>
+      <div class="container">
+        <div class="card">
+          <h3>Frontend Developer</h3>
+          <p>Creating visually stunning and user-friendly interfaces.</p>
+        </div>
+        <div class="card">
+          <h3>Backend Developer</h3>
+          <p>Ensuring robust and scalable server-side architecture.</p>
+        </div>
+        <div class="card">
+          <h3>Team Leader</h3>
+          <p>Managing projects and guiding team members to success.</p>
+        </div>
+      </div>
+    </section>
+    <section id="learned">
+      <h2>Learned</h2>
+      <div class="container">
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>Dynamic scripting language to enhance user interactions.</p>
+        </div>
+        <div class="card">
+          <h3>Python</h3>
+          <p>Powerful programming language for backend and data science.</p>
+        </div>
+        <div class="card">
+          <h3>UI/UX Design</h3>
+          <p>Crafting intuitive and engaging digital experiences.</p>
+        </div>
+      </div>
+    </section>
+    <section id="activity">
+      <h2>Activity</h2>
+      <div class="container">
+        <div class="card">
+          <h3>Open Source Contributions</h3>
+          <p>Collaborated on GitHub projects to enhance community tools.</p>
+        </div>
+        <div class="card">
+          <h3>Blog Writing</h3>
+          <p>Sharing knowledge and experiences through articles.</p>
+        </div>
+        <div class="card">
+          <h3>Hackathons</h3>
+          <p>Participated in coding challenges and innovation sprints.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
   </body>
 </html>
